@@ -1,31 +1,33 @@
 import { useState } from "react";
-import { ArrowUpRight, Code, Globe, Layout, X } from "lucide-react";
+import { ArrowUpRight, Code, Globe, Layout, X, Github } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const projects = [
   {
     icon: Globe,
     title: "Personal Portfolio Website",
-    description: "A clean, responsive portfolio website showcasing my work and skills. Built from scratch with semantic HTML and modern CSS techniques.",
-    tags: ["HTML", "CSS"],
-    details: "This portfolio website was designed to present my professional profile in a modern, clean layout. It features a hero section, about me, skills overview, project showcase, and a contact form — all built with semantic HTML5 and pure CSS3. The site is fully responsive and optimized for all screen sizes.",
-    features: ["Semantic HTML5 structure", "Pure CSS3 styling", "Mobile-responsive layout", "Clean typography", "Contact form"],
+    description: "A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, dark theme, and optimized performance.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    details: "This portfolio website showcases modern web development practices with React 18, TypeScript for type safety, and Tailwind CSS for responsive design. Includes GitHub Actions CI/CD, SEO optimization, and deployed on GitHub Pages.",
+    features: ["React 18 with hooks", "TypeScript integration", "Tailwind CSS styling", "Responsive design", "GitHub Actions deployment", "SEO optimized"],
+    liveUrl: "https://cameramanxd.github.io/AmanKumarRouniyarportfolio/",
+    githubUrl: "https://github.com/cameramanxd/AmanKumarRouniyarportfolio",
   },
   {
     icon: Layout,
     title: "Responsive Landing Page",
-    description: "A fully responsive landing page with mobile-first design approach, flexbox layouts, and smooth scrolling.",
-    tags: ["HTML", "CSS", "Responsive"],
-    details: "A pixel-perfect, mobile-first landing page built to demonstrate responsive design skills. Uses CSS Flexbox and Grid for layout, media queries for breakpoints, and smooth scroll behavior for a polished user experience.",
-    features: ["Mobile-first approach", "CSS Flexbox & Grid", "Media queries", "Smooth scrolling", "Cross-browser compatible"],
+    description: "A fully responsive landing page with mobile-first design, modern CSS techniques, and smooth user interactions.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    details: "A pixel-perfect landing page demonstrating advanced CSS skills including Flexbox, Grid, animations, and media queries. Features mobile-first responsive design and cross-browser compatibility.",
+    features: ["Mobile-first approach", "CSS Flexbox & Grid", "CSS animations", "Media queries", "Cross-browser compatible", "Performance optimized"],
   },
   {
     icon: Code,
-    title: "Simple Blog UI",
-    description: "A minimal blog user interface with clean typography, card-based layout, and responsive grid system.",
-    tags: ["HTML", "CSS", "UI Design"],
-    details: "A minimal yet elegant blog interface featuring card-based article previews, clean typography hierarchy, and a responsive grid system. The design focuses on readability and user experience with well-structured content areas.",
-    features: ["Card-based layout", "Typography hierarchy", "Responsive CSS Grid", "Clean UI design", "Readable content structure"],
+    title: "Interactive UI Components",
+    description: "A collection of reusable UI components built with modern CSS and vanilla JavaScript, featuring accessibility and performance.",
+    tags: ["HTML", "CSS", "JavaScript", "UI/UX"],
+    details: "Custom-built UI components including modals, accordions, tabs, and form elements. Focuses on accessibility (WCAG 2.1), performance, and modern JavaScript practices without external dependencies.",
+    features: ["Accessible components", "Vanilla JavaScript", "CSS custom properties", "Keyboard navigation", "Screen reader support", "Lightweight & fast"],
   },
 ];
 
@@ -56,7 +58,42 @@ const ProjectsSection = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                     <p.icon className="text-primary" size={22} />
                   </div>
-                  <ArrowUpRight className="text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" size={20} />
+                  <div className="flex gap-2">
+                    {p.liveUrl && (
+                      <a
+                        href={p.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-8 h-8 rounded-lg bg-secondary hover:bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors"
+                        title="View Live Demo"
+                      >
+                        <Globe size={16} />
+                      </a>
+                    )}
+                    {p.githubUrl && (
+                      <a
+                        href={p.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-8 h-8 rounded-lg bg-secondary hover:bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors"
+                        title="View Source Code"
+                      >
+                        <Github size={16} />
+                      </a>
+                    )}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelected(p);
+                      }}
+                      className="w-8 h-8 rounded-lg bg-secondary hover:bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors"
+                      title="View Details"
+                    >
+                      <ArrowUpRight size={16} />
+                    </button>
+                  </div>
                 </div>
 
                 <h3 className="font-display font-semibold text-lg mb-3">{p.title}</h3>
