@@ -1,0 +1,61 @@
+================================================================================
+                          AMAN KUMAR ROUNIYAR
+                     Frontend Developer Intern
+================================================================================
+
+CONTACT INFORMATION
+--------------------------------------------------------------------------------
+Location:    Duhabi-3, Nepal
+Email:       [Your Email Here]
+Phone:       [Your Phone Number]
+LinkedIn:    [Your LinkedIn Profile]
+GitHub:      [Your GitHub Profile]
+
+CAREER OBJECTIVE
+--------------------------------------------------------------------------------
+Seeking a Frontend Developer Internship where I can apply my HTML & CSS skills,
+learn modern frameworks, and contribute to building user-friendly web applications.
+Passionate and self-motivated fresher with strong interest in web development.
+
+EDUCATION
+--------------------------------------------------------------------------------
+• BSc CSIT (Computer Science and Information Technology)
+  Himalaya Darshan College, Nepal
+  Status: Currently Running
+
+• Higher Secondary Education (+2)
+  Year: 2081 (Nepali Calendar)
+  GPA: 2.88/4.0
+
+• Secondary Education Examination (SEE)
+  Year: 2079 (Nepali Calendar)
+  GPA: 3.15/4.0
+
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+• Programming Languages: HTML, CSS
+• Development Tools: VS Code, GitHub
+• Other Technologies: Blockchain (Basic Knowledge), Responsive Design
+• Soft Skills: Problem Solving, Quick Learning, Self-Motivation
+
+PROJECTS & EXPERIENCE
+--------------------------------------------------------------------------------
+• Personal Portfolio Website
+  - Built with React, TypeScript, and Tailwind CSS
+  - Responsive design with modern UI components
+  - Deployed and accessible online
+
+• Self-Learning Projects
+  - Various HTML/CSS practice projects
+  - Basic understanding of web development fundamentals
+
+PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------------
+• Quick learner with strong problem-solving skills
+• Self-motivated and eager to contribute to team projects
+• Passionate about creating beautiful, user-friendly interfaces
+• Currently pursuing BSc CSIT to deepen technical knowledge
+
+================================================================================
+Last Updated: March 2026
+================================================================================
