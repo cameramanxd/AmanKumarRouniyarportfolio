@@ -1,9 +1,0 @@
-name = "amankumarrouniyar"
-compatibility_date = "2024-04-01"
-
-[env.production]
-name = "amankumarrouniyar-prod"
-
-[assets]
-directory = "./dist"
-binding = "ASSETS"
