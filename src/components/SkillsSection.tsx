@@ -1,10 +1,21 @@
 const skills = [
   "HTML",
   "CSS",
+  "JavaScript",
+  "React",
+  "TypeScript",
   "VS Code",
   "GitHub",
-  "Blockchain (Basic)",
   "Responsive Design",
+  "Tailwind CSS",
+];
+
+const learningSkills = [
+  "Django/Flask",
+  "REST APIs",
+  "GraphQL",
+  "PostgreSQL",
+  "Docker",
 ];
 
 const SkillsSection = () => (
@@ -20,13 +31,32 @@ const SkillsSection = () => (
         </p>
       </div>
 
-      <div className="max-w-2xl mx-auto">
+      {/* Frontend Skills */}
+      <div className="max-w-2xl mx-auto mb-12">
+        <h3 className="text-center text-lg font-semibold mb-6 text-foreground">Frontend Development</h3>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill) => (
             <span key={skill} className="px-4 py-2 bg-secondary rounded-full text-sm font-medium text-foreground">
               {skill}
             </span>
           ))}
+        </div>
+      </div>
+
+      {/* Learning Phase */}
+      <div className="max-w-2xl mx-auto">
+        <div className="p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20">
+          <h3 className="text-center text-lg font-semibold mb-3 text-foreground">Learning Phase</h3>
+          <p className="text-center text-sm italic text-muted-foreground mb-6">
+            "The expert in anything was once a beginner." - Helen Hayes
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {learningSkills.map((skill) => (
+              <span key={skill} className="px-4 py-2 bg-primary/20 rounded-full text-sm font-medium text-primary border border-primary/30">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
