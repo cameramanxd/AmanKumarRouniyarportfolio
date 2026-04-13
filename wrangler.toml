@@ -1,10 +1,9 @@
 name = "amankumarrouniyar"
-type = "javascript"
 compatibility_date = "2024-04-01"
-
-[build]
-command = "npm run build"
-cwd = "."
 
 [env.production]
 name = "amankumarrouniyar-prod"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
