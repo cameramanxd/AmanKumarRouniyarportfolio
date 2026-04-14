@@ -22,7 +22,7 @@ const SkillsSection = () => (
   <section id="skills" className="py-24 bg-card/50">
     <div className="container">
       <div className="text-center mb-16">
-        <span className="text-primary text-sm font-medium tracking-wider uppercase">My Skills</span>
+        <span className="text-primary text-sm font-medium tracking-wider uppercase"></span>
         <h2 className="text-3xl sm:text-4xl font-display font-bold mt-2">
           Technologies & <span className="text-gradient">Tools</span>
         </h2>
@@ -33,7 +33,7 @@ const SkillsSection = () => (
 
       {/* Frontend Skills */}
       <div className="max-w-2xl mx-auto mb-12">
-        <h3 className="text-center text-lg font-semibold mb-6 text-foreground">Frontend Development</h3>
+        <h3 className="text-center text-lg font-semibold mb-6 text-foreground"></h3>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill) => (
             <span key={skill} className="px-4 py-2 bg-secondary rounded-full text-sm font-medium text-foreground">
