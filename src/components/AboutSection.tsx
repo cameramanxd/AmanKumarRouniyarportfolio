@@ -6,7 +6,7 @@ const AboutSection = () => (
       <div className="text-center mb-16">
         <span className="text-primary text-sm font-medium tracking-wider uppercase">About Me</span>
         <h2 className="text-3xl sm:text-4xl font-display font-bold mt-2">
-          I'm Aman, a <span className="text-gradient">Frontend Developer</span> based in Nepal
+          
         </h2>
       </div>
 
