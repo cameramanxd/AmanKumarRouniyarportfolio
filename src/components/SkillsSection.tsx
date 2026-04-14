@@ -23,9 +23,9 @@ const SkillsSection = () => (
     <div className="container">
       <div className="text-center mb-16">
         <span className="text-primary text-sm font-medium tracking-wider uppercase"></span>
-        <h2 className="text-3xl sm:text-4xl font-display font-bold mt-2">
+        <h3 className="text-3xl sm:text-4xl font-display font-bold mt-2">
           Technologies & <span className="text-gradient">Tools</span>
-        </h2>
+        </h3>
         <p className="text-muted-foreground mt-3 max-w-lg mx-auto text-sm">
           Continuously expanding my skillset in frontend development and modern web technologies.
         </p>
