@@ -46,9 +46,9 @@ const AboutSection = () => (
             Duhabi-3, Nepal
           </p>
           <div className="mt-4 space-y-2 text-sm">
-            <p className="text-muted-foreground">Quick learner · Self-motivated</p>
-            <p className="text-muted-foreground">Strong problem-solving skills</p>
-            <p className="text-muted-foreground">Passionate about web development</p>
+            <p className="text-muted-foreground"></p>
+            <p className="text-muted-foreground"></p>
+            <p className="text-muted-foreground"></p>
           </div>
         </div>
       </div>
