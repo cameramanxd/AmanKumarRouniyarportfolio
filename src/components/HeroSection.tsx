@@ -1,4 +1,5 @@
-import { ArrowRight, Download, Github, Linkedin, User } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
+import heroPortrait from "@/assets/hero-portrait.jpg";
 
 
 const HeroSection = () => (
@@ -49,7 +50,7 @@ const HeroSection = () => (
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl scale-75" />
           <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 glow-border bg-secondary flex items-center justify-center">
-            <User className="text-muted-foreground" size={96} />
+            <img src={heroPortrait} alt="Aman Kumar Rouniyar" className="w-full h-full object-cover" />
           </div>
           {/* Floating badge */}
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-xl px-5 py-2.5 flex items-center gap-3 shadow-lg">
